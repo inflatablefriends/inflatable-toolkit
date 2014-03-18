@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IF.Common.Metro", "src\IF.Common.Metro\IF.Common.Metro.csproj", "{948802F9-6D48-489C-8500-F6D2C84411BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug ARM|Any CPU = Debug ARM|Any CPU
+		Debug ARM|ARM = Debug ARM|ARM
+		Debug ARM|x64 = Debug ARM|x64
+		Debug ARM|x86 = Debug ARM|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|Any CPU.ActiveCfg = Debug ARM|Any CPU
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|Any CPU.Build.0 = Debug ARM|Any CPU
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|ARM.ActiveCfg = Debug ARM|ARM
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|ARM.Build.0 = Debug ARM|ARM
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|x64.ActiveCfg = Debug ARM|x64
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|x64.Build.0 = Debug ARM|x64
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|x86.ActiveCfg = Debug ARM|x86
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug ARM|x86.Build.0 = Debug ARM|x86
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|ARM.Build.0 = Debug|ARM
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|x64.ActiveCfg = Debug|x64
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|x64.Build.0 = Debug|x64
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|x86.ActiveCfg = Debug|x86
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Debug|x86.Build.0 = Debug|x86
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|ARM.ActiveCfg = Release|ARM
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|ARM.Build.0 = Release|ARM
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|x64.ActiveCfg = Release|x64
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|x64.Build.0 = Release|x64
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|x86.ActiveCfg = Release|x86
+		{948802F9-6D48-489C-8500-F6D2C84411BD}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
