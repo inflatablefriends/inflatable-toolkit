@@ -104,6 +104,7 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Framework\AsyncHelpers.cs" />
     <Compile Include="Mvvm\AsyncDelegateCommand.cs" />
     <Compile Include="Mvvm\DelegateCommand.cs" />
     <Compile Include="Mvvm\INavigationService.cs" />
@@ -115,6 +116,8 @@
     <Compile Include="Progress\ProgressToken.cs" />
     <Compile Include="Progress\PropertyChangingBase.cs" />
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Framework\Storage\FolderManager.cs" />
+    <Compile Include="Framework\Storage\StoreType.cs" />
     <Compile Include="Structures\IEditableCollectionView.cs" />
     <Compile Include="Structures\ICollectionViewEx.cs" />
     <Compile Include="Structures\ListCollectionView.cs" />
