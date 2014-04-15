@@ -8,11 +8,16 @@ namespace IF.Common.Metro.Framework.Storage
 {
     public class FolderManager
     {
-        public async static Task<StorageFile> GetFile(string filename, StoreType location = StoreType.Local,
-                                                      params string[] folderNames)
+        public async static Task<StorageFile> NewFile(string filename, StoreType location = StoreType.Local, params string[] folderNames)
         {
             var folder = await GetFolder(location, folderNames);
+            var file = await folder.CreateFileAsync(filename, CreationCollisionOption.OpenIfExists);
+            return file;
+        }
 
+        public async static Task<StorageFile> GetFile(string filename, StoreType location = StoreType.Local, params string[] folderNames)
+        {
+            var folder = await GetFolder(location, folderNames);
             var fileList = await folder.GetFilesAsync();
 
             if (fileList.Any(f => f.Name.Contains(filename)))
