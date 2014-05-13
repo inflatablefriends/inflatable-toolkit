@@ -1,7 +1,6 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Windows.UI.Core;
-using IF.Common.Metro.Properties;
 
 namespace IF.Common.Metro.Mvvm
 {
@@ -18,7 +17,7 @@ namespace IF.Common.Metro.Mvvm
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        [NotifyPropertyChangedInvocator]
+        [Annotations.NotifyPropertyChangedInvocator]
         protected virtual void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
             if (Dispatcher == null)
