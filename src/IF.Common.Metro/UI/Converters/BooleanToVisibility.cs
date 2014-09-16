@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ServiceModel.Channels;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Data;
 
