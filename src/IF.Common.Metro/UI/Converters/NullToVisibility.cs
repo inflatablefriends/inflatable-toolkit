@@ -8,9 +8,12 @@ namespace IF.Common.Metro.UI.Converters
     {
         public bool Reverse { get; set; }
 
+        /// <summary>
+        /// Converts null to collapsed.
+        /// </summary>
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var vis = value == null;
+            var vis = value != null;
             if (Reverse)
             {
                 vis = !vis;
