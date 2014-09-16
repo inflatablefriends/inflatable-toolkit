@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using Windows.UI.Core;
 using IF.Common.Metro.Properties;
 
-namespace IF.Common.Metro.Progress
+namespace IF.Common.Metro.Mvvm
 {
     public class PropertyChangingBase : INotifyPropertyChanged
     {

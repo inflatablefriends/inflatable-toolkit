@@ -108,10 +108,10 @@
     <Compile Include="Mvvm\IView.cs" />
     <Compile Include="Mvvm\IViewModel.cs" />
     <Compile Include="Mvvm\NavigationService.cs" />
+    <Compile Include="Mvvm\PropertyChangingBase.cs" />
     <Compile Include="Progress\IProgressAggregator.cs" />
     <Compile Include="Progress\ProgressAggregator.cs" />
     <Compile Include="Progress\ProgressToken.cs" />
-    <Compile Include="Progress\PropertyChangingBase.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Structures\IEditableCollectionView.cs" />
     <Compile Include="Structures\ICollectionViewEx.cs" />

@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Windows.Input;
 using Windows.UI.Core;
+using IF.Common.Metro.Mvvm;
 
 namespace IF.Common.Metro.Progress
 {

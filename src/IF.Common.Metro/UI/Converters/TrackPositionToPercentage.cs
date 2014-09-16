@@ -31,7 +31,13 @@ namespace IF.Common.Metro.UI.Converters
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
-            throw new NotImplementedException();
+            var percent = (double) value;
+            var fraction = percent/100;
+
+            var seconds = (int) (TrackDuration.TotalSeconds * fraction);
+            var newTime = new TimeSpan(0,0,seconds);
+
+            return newTime;
         }
     }
 }
