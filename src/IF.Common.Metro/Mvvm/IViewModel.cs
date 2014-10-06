@@ -1,17 +1,14 @@
 ﻿using System.ComponentModel;
-using System.Threading.Tasks;
-using Windows.UI;
+using Windows.UI.Xaml.Navigation;
 
 namespace IF.Common.Metro.Mvvm
 {
     public interface IViewModel : INotifyPropertyChanged
     {
         string PageTitle { get; }
-        Color AccentColour { get; }
 
-        bool Initialised { get; }
-        Task AfterNavigatedToAsync(object parameter);
-        Task BeforeNavigatedFromAsync();
-        Task AfterPageLoadedAsync();
+        void AfterNavigatedTo(object parameter);
+        void BeforeNavigatedFrom();
+        void AfterPageLoaded();
     }
 }
