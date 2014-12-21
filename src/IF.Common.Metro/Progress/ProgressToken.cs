@@ -79,33 +79,37 @@ namespace IF.Common.Metro.Progress
 
         #endregion
 
-        private void Initialise(string reason, bool isIndeterminate, CancellationTokenSource cts, ICommand command)
+        private void Initialise(Guid? id, string reason, bool isIndeterminate, CancellationTokenSource cts, ICommand command)
         {
-            Id = Guid.NewGuid();
+            Id = id ?? Guid.NewGuid();
             Reason = reason;
             IsIndeterminate = isIndeterminate;
             CancellationTokenSource = cts;
             CancelCommand = command;
         }
 
+        public ProgressToken(Guid id, string reason, CoreDispatcher dispatcher, bool isIndeterminate)
+            : base(dispatcher)
+        {
+            Initialise(id, reason, isIndeterminate, null, null);
+        }
+
         public ProgressToken(string reason, CoreDispatcher dispatcher)
             : base(dispatcher)
         {
-            Initialise(reason, false, null, null);
+            Initialise(null, reason, false, null, null);
         }
 
         public ProgressToken(string reason, CoreDispatcher dispatcher, bool isIndeterminate)
             : base(dispatcher)
         {
-            Initialise(reason, isIndeterminate, null, null);
+            Initialise(null, reason, isIndeterminate, null, null);
         }
 
         public ProgressToken(string reason, CoreDispatcher dispatcher, bool isIndeterminate, CancellationTokenSource cts, ICommand cancelCommand)
             : base(dispatcher)
         {
-            Initialise(reason, isIndeterminate, cts, cancelCommand);
+            Initialise(null, reason, isIndeterminate, cts, cancelCommand);
         }
-
-        
     }
 }

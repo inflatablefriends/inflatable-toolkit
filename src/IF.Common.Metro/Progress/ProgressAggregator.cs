@@ -116,6 +116,23 @@ namespace IF.Common.Metro.Progress
             RaisePropertyChanged("IsLoading");
         }
 
+        public bool IsTokenInProgress(Guid id)
+        {
+            return AllInProgress.Any(l => l.Id == id);
+        }
+
+        public ProgressToken RaiseLoading(Guid id, string reason, bool isIndeterminate)
+        {
+            if (IsTokenInProgress(id))
+            {
+                return AllInProgress.First(t => t.Id == id);
+            }
+
+            var token = new ProgressToken(id, reason, Dispatcher, isIndeterminate);
+            RaiseLoading(token);
+            return token;
+        }
+
         public ProgressToken RaiseLoading(string reason, bool isIndeterminate)
         {
             var token = new ProgressToken(reason, Dispatcher, isIndeterminate);

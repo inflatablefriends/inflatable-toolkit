@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using Windows.Foundation;
 using Windows.Storage.Streams;
 
 namespace IF.Common.Metro.Structures
@@ -68,19 +69,19 @@ namespace IF.Common.Metro.Structures
             this.m_InternalStream.Dispose();
         }
 
-        public Windows.Foundation.IAsyncOperationWithProgress<IBuffer, uint> ReadAsync(IBuffer buffer, uint count, InputStreamOptions options)
+        public IAsyncOperationWithProgress<IBuffer, uint> ReadAsync(IBuffer buffer, uint count, InputStreamOptions options)
         {
             var inputStream = this.GetInputStreamAt(0);
             return inputStream.ReadAsync(buffer, count, options);
         }
 
-        public Windows.Foundation.IAsyncOperation<bool> FlushAsync()
+        public IAsyncOperation<bool> FlushAsync()
         {
             var outputStream = this.GetOutputStreamAt(0);
             return outputStream.FlushAsync();
         }
 
-        public Windows.Foundation.IAsyncOperationWithProgress<uint, uint> WriteAsync(IBuffer buffer)
+        public IAsyncOperationWithProgress<uint, uint> WriteAsync(IBuffer buffer)
         {
             var outputStream = this.GetOutputStreamAt(0);
             return outputStream.WriteAsync(buffer);
