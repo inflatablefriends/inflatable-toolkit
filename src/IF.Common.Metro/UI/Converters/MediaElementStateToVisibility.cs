@@ -5,10 +5,18 @@ using Windows.UI.Xaml.Media;
 
 namespace IF.Common.Metro.UI.Converters
 {
-    public sealed class MediaElementPlayingToVisibility : IValueConverter
+    public sealed class MediaElementStateToVisibility : IValueConverter
     {
         public bool Reverse { get; set; }
 
+        /// <summary>
+        /// state.playing is converted to Visible.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="targetType"></param>
+        /// <param name="parameter"></param>
+        /// <param name="language"></param>
+        /// <returns></returns>
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (value is MediaElementState)

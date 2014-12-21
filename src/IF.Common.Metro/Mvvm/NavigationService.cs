@@ -35,9 +35,7 @@ namespace IF.Common.Metro.Mvvm
             var viewModel = view.ViewModel;
             if (viewModel != null)
             {
-                var copy = e.Parameter;
-
-                Task.Run(() => viewModel.AfterNavigatedToAsync(copy));
+                viewModel.AfterNavigatedTo(e.Parameter);
             }
 
             var handler = Navigated;
