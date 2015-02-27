@@ -124,6 +124,7 @@
     <Compile Include="Structures\ListSortDirection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structures\SortDescription.cs" />
+    <Compile Include="UI\Extensions\ColourEx.cs" />
     <Compile Include="UI\Converters\BooleanToVisibility.cs" />
     <Compile Include="UI\Converters\MediaElementStateToVisibility.cs" />
     <Compile Include="UI\Converters\NullToVisibility.cs" />

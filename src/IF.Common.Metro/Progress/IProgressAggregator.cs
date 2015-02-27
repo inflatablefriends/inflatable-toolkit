@@ -14,11 +14,14 @@ namespace IF.Common.Metro.Progress
 
         void RefreshBindings();
 
+        ProgressToken RaiseLoading(Guid id, string reason, bool isIndeterminate);
         ProgressToken RaiseLoading(string reason, bool isIndeterminate);
         ProgressToken RaiseLoading(string reason, bool isIndeterminate, CancellationTokenSource cts, ICommand cancelCommand);
         
         void RaiseLoading(ProgressToken e);
 
         event EventHandler<ProgressToken> ProgressChanged;
+
+        bool IsTokenInProgress(Guid loadingTokenGuid);
     }
 }
