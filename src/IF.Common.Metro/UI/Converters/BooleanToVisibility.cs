@@ -10,6 +10,11 @@ namespace IF.Common.Metro.UI.Converters
 
         public object Convert(object value, Type targetType, object parameter, string language)
         {
+            if (value == null)
+            {
+                return Visibility.Collapsed;
+            }
+
             var vis = (value is bool && (bool)value);
             if (Reverse)
             {

@@ -1,4 +1,6 @@
-﻿using Windows.UI.Core;
+﻿using System.Diagnostics;
+using Windows.ApplicationModel;
+using Windows.UI.Core;
 using Windows.UI.Xaml.Navigation;
 using IF.Common.Metro.Progress;
 
@@ -9,6 +11,18 @@ namespace IF.Common.Metro.Mvvm
         public string PageTitle { get; private set; }
 
         public IProgressAggregator Progress { get; private set; }
+
+        public bool DesignModeEnabled
+        {
+            get { return DesignMode.DesignModeEnabled; }
+        }
+
+#if DEBUG
+        public ViewModelBase() : base(null)
+        {
+            
+        }
+#endif
 
         public ViewModelBase(CoreDispatcher dispatcher, IProgressAggregator p) : base(dispatcher)
         {
