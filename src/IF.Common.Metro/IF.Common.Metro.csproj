@@ -103,7 +103,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Framework\AsyncHelpers.cs" />
-    <Compile Include="Framework\GroupedObservableCollection.cs" />
+    <Compile Include="Framework\Group.cs" />
     <Compile Include="Framework\Storage\FolderManager.cs" />
     <Compile Include="Framework\Storage\StoreType.cs" />
     <Compile Include="Mvvm\AsyncDelegateCommand.cs" />
