@@ -17,12 +17,10 @@ namespace IF.Common.Metro.Mvvm
             get { return DesignMode.DesignModeEnabled; }
         }
 
-#if DEBUG
         public ViewModelBase() : base(null)
         {
             
         }
-#endif
 
         public ViewModelBase(CoreDispatcher dispatcher, IProgressAggregator p) : base(dispatcher)
         {
