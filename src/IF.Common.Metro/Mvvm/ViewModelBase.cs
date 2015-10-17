@@ -1,21 +1,16 @@
-﻿using System.Diagnostics;
-using Windows.ApplicationModel;
+﻿using Windows.ApplicationModel;
 using Windows.UI.Core;
-using Windows.UI.Xaml.Navigation;
 using IF.Common.Metro.Progress;
 
 namespace IF.Common.Metro.Mvvm
 {
     public class ViewModelBase : PropertyChangingBase, IViewModel
     {
-        public string PageTitle { get; private set; }
+        public string PageTitle { get; }
 
         public IProgressAggregator Progress { get; private set; }
 
-        public bool DesignModeEnabled
-        {
-            get { return DesignMode.DesignModeEnabled; }
-        }
+        public bool DesignModeEnabled => DesignMode.DesignModeEnabled;
 
         public ViewModelBase() : base(null)
         {
